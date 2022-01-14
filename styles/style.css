@@ -1,14 +1,16 @@
-root{
+:root{
     --white: #FFFFFF;
     --black: #000000;
     --dark: #232830;
     --very-light-pink: #C7C7C7;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
+    --font-size:16px;
 }
 body{
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+    font-size: var(--font-size);
 }
 .login{
     width: 100%;
@@ -24,4 +26,39 @@ body{
 .logo{
     width: 150px;
     margin: 0 auto 20px;
+}
+.title{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.subtitle{
+    text-align: center;
+    font-weight: 300;
+    color: var(--very-light-pink);
+    margin: 0 0 40px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-weight: 700;
+}
+input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+.btn-login{
+    background-color: var(--hospital-green);
+    color: var(--white);
+    margin: 16px 0 20px;
+    padding: 16px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
 }
