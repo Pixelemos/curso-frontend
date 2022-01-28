@@ -21,6 +21,7 @@ a{
     height: 100vh;
     display: grid;
     place-items: center;
+    position: relative;
 }
 .form-container{
     display: grid;
@@ -70,6 +71,9 @@ input{
     padding: 8px 16px;
     margin-bottom: 16px;
 }
+.input-email{
+    margin-bottom:20px;
+}
 .btn-login{
     background-color: var(--hospital-green);
     color: var(--white);
@@ -80,13 +84,38 @@ input{
     font-size: 1em;
     cursor: pointer;
 }
+.btn-secondary{
+    background-color: var(--white);
+    color: var(--hospital-green);
+    margin: 16px 0 20px;
+    padding: 16px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border: solid 1px var(--hospital-green);
+    border-radius: 8px;
+}
+.btn-signup {
+    position: absolute;
+    bottom: 20px;
+    width: 300px;
+    margin-bottom: 0;
+}
 .resend{
     font-weight: 700;
+    text-align: center;
+}
+.text-center{
     text-align: center;
 }
 @media (min-width:769px){
     .logo{
         display:none;
+    }
+    .btn-signup {
+        position: relative;
+        top: 40px;        
     }
 
 }
